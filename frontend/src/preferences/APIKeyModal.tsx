@@ -24,7 +24,7 @@ export default function APIKeyModal({
     () => {
       if (
         window.matchMedia('(max-width: 768px)').matches &&
-        modalState === 'ACTIVE'
+        modalState === 'INACTIVE'
       ) {
         setModalState('INACTIVE');
       }
