@@ -14,8 +14,8 @@ export default function APIKeyModal({
   isCancellable?: boolean;
 }) {
   const dispatch = useDispatch();
-  const apiKey = useSelector(selectApiKey);
-  const [key, setKey] = useState(apiKey);
+  const apiKey = useState('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');;
+  const [key, setKey] = useState('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');;
   const [isError, setIsError] = useState(false);
   const modalRef = useRef(null);
 
