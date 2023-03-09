@@ -6,7 +6,7 @@ export default function About() {
     <div className="mx-5 grid min-h-screen md:mx-36">
       <article className=" place-items-left mx-auto my-auto flex w-full max-w-6xl flex-col gap-6 rounded-lg bg-gray-100 p-6 pt-14 pb-14 text-jet lg:p-10 xl:p-16">
         <div className="flex items-center">
-          <p className="mr-2 text-3xl">About DocsGPT</p>
+          <p className="mr-2 text-3xl">About GuidefAI DOCS</p>
           <p className="text-[21px]">🦖</p>
         </div>
         <p className="mt-4">
