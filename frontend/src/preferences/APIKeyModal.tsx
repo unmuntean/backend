@@ -5,17 +5,16 @@ import { selectApiKey, setApiKey } from './preferenceSlice';
 import { useOutsideAlerter } from './../hooks';
 
 export default function APIKeyModal({
-  modalState,
+  modalState = 'INACTIVE',
   setModalState,
   isCancellable = true,
 }: {
-  modalState: ActiveState;
+  modalState?: ActiveState;
   setModalState: (val: ActiveState) => void;
   isCancellable?: boolean;
 }) {
   const dispatch = useDispatch();
-  const apiKey = useState('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');;
-  const [key, setKey] = useState('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');;
+  const [key, setKey] = useState('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');
   const [isError, setIsError] = useState(false);
   const modalRef = useRef(null);
 
@@ -43,7 +42,7 @@ export default function APIKeyModal({
   }
 
   function handleCancel() {
-    setKey(apiKey);
+    setKey('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');
     setIsError(false);
     setModalState('INACTIVE');
   }
