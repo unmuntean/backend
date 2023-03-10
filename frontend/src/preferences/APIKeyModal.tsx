@@ -51,7 +51,7 @@ export default function APIKeyModal({
   return (
     <div
       className={`${
-        modalState === 'INACTIVE' ? 'visible' : 'hidden'
+        modalState === 'ACTIVE' ? 'visible' : 'hidden'
       } absolute z-30  h-screen w-screen  bg-gray-alpha`}
     >
       <article
